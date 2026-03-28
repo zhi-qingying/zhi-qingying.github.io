@@ -61,36 +61,104 @@
         📊 <a href="projects/hr-analytics/index.html" style="color: #1e6fdf;">View Dashboard Details →</a>
     </p>
 </div>
-    <!-- 新增的新闻分析系统项目 -->
+<!-- 金融新闻智能分析系统 -->
 <div class="project">
-    <h3>Financial News Intelligence System – AI-Powered Analysis Pipeline</h3>
+    <h3>📊 Financial News Intelligence System – AI-Powered Analysis Pipeline</h3>
+    
+    <!-- 项目简介 -->
     <p>
-        Built an automated pipeline to scrape, clean, analyze, and report on global fintech news. The system integrates 
-        <strong>web crawling</strong> (Requests, BeautifulSoup), <strong>data storage</strong> (MongoDB), and 
-        <strong>Generative AI</strong> (DeepSeek API) to generate concise summaries, sentiment analysis, and key topic 
-        classification from hundreds of news articles. Final insights are compiled into multi-sheet Excel reports with 
-        statistical breakdowns, reducing manual research time from hours to minutes.
+        Built an automated pipeline that scrapes, cleans, and analyzes fintech news using Generative AI. 
+        The system processes hundreds of articles daily, generating concise summaries, sentiment analysis, 
+        and topic classifications. Final insights are compiled into multi-sheet Excel reports for easy review.
     </p>
-    <p><strong>Key Features:</strong></p>
+    
+    <!-- 技术栈标签 -->
+    <div style="margin: 12px 0; display: flex; flex-wrap: wrap; gap: 8px;">
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🐍 Python</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">📊 Pandas</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🌐 Requests</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🍲 BeautifulSoup</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🍃 MongoDB</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🤖 DeepSeek API</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">📁 openpyxl</span>
+    </div>
+    
+    <!-- 关键数据卡片（从你的 Excel 提取） -->
+    <div style="display: flex; gap: 16px; margin: 20px 0; flex-wrap: wrap;">
+        <div style="background: #f0f7ff; padding: 12px 20px; border-radius: 12px; text-align: center; flex: 1; min-width: 80px;">
+            <div style="font-size: 28px; font-weight: bold; color: #1976d2;">15</div>
+            <div style="font-size: 12px; color: #555;">News Articles</div>
+        </div>
+        <div style="background: #e8f5e9; padding: 12px 20px; border-radius: 12px; text-align: center; flex: 1; min-width: 80px;">
+            <div style="font-size: 28px; font-weight: bold; color: #2e7d32;">7</div>
+            <div style="font-size: 12px; color: #555;">Positive</div>
+        </div>
+        <div style="background: #ffebee; padding: 12px 20px; border-radius: 12px; text-align: center; flex: 1; min-width: 80px;">
+            <div style="font-size: 28px; font-weight: bold; color: #c62828;">7</div>
+            <div style="font-size: 12px; color: #555;">Negative</div>
+        </div>
+        <div style="background: #fff3e0; padding: 12px 20px; border-radius: 12px; text-align: center; flex: 1; min-width: 80px;">
+            <div style="font-size: 28px; font-weight: bold; color: #ff9800;">10</div>
+            <div style="font-size: 12px; color: #555;">Investment News</div>
+        </div>
+    </div>
+    
+    <!-- 系统架构图 -->
+    <div style="margin: 20px 0;">
+        <p style="font-weight: 500; margin-bottom: 8px;">🏗️ System Architecture</p>
+        <img src="projects/financial-news-analysis/architecture.png" 
+             alt="Financial News Analysis System Architecture"
+             style="width: 100%; max-width: 800px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <p style="font-size: 13px; color: #666; margin-top: 8px;">
+            End-to-end pipeline: Data scraping → Cleaning → MongoDB storage → AI analysis → Excel reporting
+        </p>
+    </div>
+    
+    <!-- 分析结果图表 -->
+    <div style="margin: 20px 0;">
+        <p style="font-weight: 500; margin-bottom: 8px;">📈 Analysis Results</p>
+        <img src="projects/financial-news-analysis/analysis_chart.png" 
+             alt="Sentiment and Category Distribution"
+             style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <p style="font-size: 13px; color: #666; margin-top: 8px;">
+            Sample output: Sentiment distribution (7 positive, 7 negative, 1 neutral) and category breakdown from 15 fintech news articles.
+        </p>
+    </div>
+    
+    <!-- AI 生成摘要示例 -->
+    <div style="margin: 20px 0; background: #f9f9f9; padding: 16px; border-radius: 12px; border-left: 4px solid #1976d2;">
+        <p style="font-weight: 500; margin: 0 0 8px 0;">🤖 AI-Generated Summary Sample</p>
+        <p style="margin: 0; color: #333; font-size: 14px;">
+            <strong>Original:</strong> "After pivoting, Y Combinator grad Glimpse raises $35M led by a16z"<br>
+            <strong>AI Summary:</strong> "Y Combinator graduate Glimpse has secured $35 million in Series A funding led by Andreessen Horowitz."
+        </p>
+    </div>
+    
+    <!-- 核心功能列表 -->
+    <p><strong>✨ Key Features:</strong></p>
     <ul>
-        <li>Automated news scraping with anti-detection measures (User-Agent rotation, delays).</li>
-        <li>Data cleaning and deduplication using Pandas (handling missing values, text normalization).</li>
-        <li>AI-powered content analysis: one-line summaries, sentiment scoring (positive/negative/neutral), and category classification (fintech, banking, investment, etc.).</li>
-        <li>MongoDB for structured storage and querying of historical news.</li>
-        <li>Automated Excel reporting with pivot-style sheets (trends by source, sentiment, category).</li>
+        <li><strong>Automated Data Collection:</strong> Scrapes fintech news from NewsAPI with anti-detection measures</li>
+        <li><strong>Data Cleaning:</strong> Handles missing values, deduplication, text normalization using Pandas</li>
+        <li><strong>AI-Powered Analysis:</strong> Generates summaries, sentiment scores, and category classification via DeepSeek API</li>
+        <li><strong>MongoDB Storage:</strong> Structured storage with indexing for efficient querying</li>
+        <li><strong>Automated Reporting:</strong> Multi-sheet Excel reports with source/sentiment/category breakdowns</li>
     </ul>
-    <p><strong>Impact:</strong> Delivers a daily intelligence brief that enables quick tracking of market sentiment and emerging topics, supporting faster decision-making.</p>
-    <p>
-        <strong>Tech Stack:</strong> Python · Pandas · Requests · BeautifulSoup · MongoDB · DeepSeek API · OpenAI SDK · Excel (openpyxl)
-    </p>
-    <p>
-        📂 <a href="https://github.com/zhi-qingying/financial-news-analysis-system" target="_blank">GitHub Repository</a> · 
-        📊 <a href="path/to/your/sample-report.pdf" target="_blank">Sample Report (PDF)</a>
-    </p>
-    <!-- 可以加一张项目成果截图 -->
-    <img src="path/to/your/screenshot-dashboard.png" alt="Financial News Analysis Report Sample" style="max-width: 100%; border-radius: 8px; margin-top: 12px;">
+    
+    <!-- 项目链接 -->
+    <div style="margin-top: 20px; display: flex; gap: 20px; flex-wrap: wrap;">
+        <a href="https://github.com/zhi-qingying/financial-news-analysis-system" 
+           target="_blank" 
+           style="display: inline-flex; align-items: center; gap: 6px; background: #24292f; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px;">
+            📂 GitHub Repository
+        </a>
+        <a href="projects/financial-news-analysis/daily_report_20260328.xlsx" 
+           target="_blank"
+           style="display: inline-flex; align-items: center; gap: 6px; background: #1e6f3f; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 14px;">
+            📊 Download Sample Report (Excel)
+        </a>
+    </div>
 </div>
-<hr> <!-- 分割线，保持和原风格一致 -->
+<hr style="margin: 30px 0;">
     
     <div class="project">
         <h3>Hong Kong Cross-Border Medical Aesthetics Mini Program</h3>
