@@ -146,7 +146,84 @@
     
     
 <hr style="margin: 30px 0;">
+    <!-- 香港房地产数据分析系统 -->
+<div class="project">
+    <h3>🏠 Hong Kong Property Market Analytics Platform</h3>
     
+    <p>
+        Built a comprehensive data analytics pipeline for Hong Kong residential property market analysis.
+        Generated 5,000+ synthetic transaction records, created SQLite database for efficient querying, 
+        and developed SQL-based insights on price trends, district rankings, and price-to-area relationships.
+    </p>
+    
+    <!-- 技术栈标签 -->
+    <div style="margin: 12px 0; display: flex; flex-wrap: wrap; gap: 8px;">
+        <span class="tag">🐍 Python</span>
+        <span class="tag">📊 Pandas</span>
+        <span class="tag">🗄️ SQLite</span>
+        <span class="tag">📈 SQL Analysis</span>
+        <span class="tag">📁 Excel Export</span>
+        <span class="tag">🎲 Synthetic Data</span>
+    </div>
+    
+    <!-- 关键数据卡片 -->
+    <div style="display: flex; gap: 16px; margin: 20px 0; flex-wrap: wrap;">
+        <div style="background: #f0f7ff; padding: 12px 20px; border-radius: 12px; text-align: center; flex: 1;">
+            <div style="font-size: 28px; font-weight: bold; color: #1976d2;">5,000+</div>
+            <div style="font-size: 12px; color: #555;">Transaction Records</div>
+        </div>
+        <div style="background: #e8f5e9; padding: 12px 20px; border-radius: 12px; text-align: center; flex: 1;">
+            <div style="font-size: 28px; font-weight: bold; color: #2e7d32;">18</div>
+            <div style="font-size: 12px; color: #555;">Districts Covered</div>
+        </div>
+        <div style="background: #fff3e0; padding: 12px 20px; border-radius: 12px; text-align: center; flex: 1;">
+            <div style="font-size: 28px; font-weight: bold; color: #ff9800;">8</div>
+            <div style="font-size: 12px; color: #555;">SQL Analysis Queries</div>
+        </div>
+    </div>
+    
+    <!-- 分析结果示例 -->
+    <div style="margin: 20px 0;">
+        <p style="font-weight: 500; margin-bottom: 8px;">📊 Key Insights from SQL Analysis</p>
+        <ul style="margin: 0 0 0 20px; color: #555;">
+            <li><strong>Price Ranking:</strong> Central & Western district has highest avg price per sqft (HKD $87,200+), followed by Wan Chai and Southern</li>
+            <li><strong>Price-Area Correlation:</strong> Negative correlation (-0.42) confirms smaller units have higher price per sqft</li>
+            <li><strong>Most Active Estate:</strong> THE VICTORIA recorded 180+ transactions across all districts</li>
+            <li><strong>New Sale Premium:</strong> New Sale transactions average 8-12% higher price per sqft than Resale</li>
+        </ul>
+    </div>
+    
+    <!-- 数据模型可视化（如果你有图表截图）-->
+    <div style="margin: 20px 0;">
+        <p style="font-weight: 500; margin-bottom: 8px;">🏗️ Data Pipeline Architecture</p>
+        <img src="projects/hk-property/architecture.png" 
+             alt="HK Property Analytics Pipeline"
+             style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
+             onerror="this.style.display='none'">
+        <p style="font-size: 13px; color: #666; margin-top: 8px;">
+            Synthetic data generation → SQLite database → SQL analysis queries → Excel reporting
+        </p>
+    </div>
+    
+    <!-- 核心功能列表 -->
+    <p><strong>✨ Key Features:</strong></p>
+    <ul>
+        <li><strong>Synthetic Data Generator:</strong> Python script generating realistic property transactions with district-specific price distributions</li>
+        <li><strong>SQLite Database:</strong> Structured storage with 5,000+ records, optimized for analytical queries</li>
+        <li><strong>8 SQL Analysis Modules:</strong> Monthly trends, district rankings, estate activity, price-area correlation, transaction type analysis</li>
+        <li><strong>Automated Excel Reporting:</strong> Multi-sheet export of all analysis results for stakeholder review</li>
+        <li><strong>Correlation Analysis:</strong> Quantified negative relationship between property size and price per sqft</li>
+    </ul>
+    
+    <!-- 项目资源链接 -->
+    <p style="margin-top: 15px;">
+        <a href="projects/hk-property/README.md" style="color: #1e6fdf;">📖 Documentation →</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://github.com/zhi-qingying/hk-property-analysis" style="color: #1e6fdf;">💻 GitHub Repository →</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="projects/hk-property/hk_property_sql_analysis.xlsx" style="color: #1e6fdf;">📊 Download Analysis Report (Excel) →</a>
+    </p>
+</div>
     <div class="project">
         <h3>Hong Kong Cross-Border Medical Aesthetics Mini Program</h3>
         <p>Identified market opportunities in mainland-to-Hong Kong medical aesthetics consumption, initiated a cross-border mini-program project positioned as a "curated bridge for mainland customers seeking HK medical aesthetics services".</p>
