@@ -20,6 +20,16 @@
             margin: 20px 0;
             border-radius: 12px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .project a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         .tag {
             background: #e8f0fe;
@@ -30,6 +40,11 @@
             display: inline-block;
             margin: 5px 5px 0 0;
         }
+        .click-hint {
+            margin-top: 12px;
+            color: #1e6fdf;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +53,7 @@
     
     <h2>Projects</h2>
     
-    <!-- SmartFlow AI - 智能任务拆解引擎（为 IGEARS 岗位定制）-->
+    <!-- SmartFlow AI - Intelligent Task Decomposition Engine -->
     <div class="project">
         <h3>🤖 SmartFlow AI - Intelligent Task Decomposition Engine</h3>
         
@@ -48,7 +63,6 @@
             and robust error handling capabilities required for the AI & Software Engineering Intern role at IGEARS.</strong>
         </p>
         
-        <!-- 技术栈标签 -->
         <div style="margin: 12px 0; display: flex; flex-wrap: wrap; gap: 8px;">
             <span class="tag">🐍 Python</span>
             <span class="tag">🤖 DeepSeek API</span>
@@ -60,7 +74,6 @@
             <span class="tag">🛡️ Error Handling</span>
         </div>
         
-        <!-- 关键数据卡片 -->
         <div style="display: flex; gap: 16px; margin: 20px 0; flex-wrap: wrap;">
             <div style="background: #f0f7ff; padding: 12px 20px; border-radius: 12px; text-align: center; flex: 1;">
                 <div style="font-size: 28px; font-weight: bold; color: #1976d2;">3-6</div>
@@ -80,87 +93,19 @@
             </div>
         </div>
         
-        <!-- AI 核心功能演示 -->
-        <div style="margin: 20px 0;">
-            <p style="font-weight: 500; margin-bottom: 8px;">🎯 Core AI Features</p>
-            <div style="background: #f8f9fa; padding: 16px; border-radius: 12px;">
-                <div style="margin-bottom: 12px;">
-                    <strong>Input:</strong><br>
-                    <code style="background: #e9ecef; padding: 4px 8px; border-radius: 6px; display: inline-block; margin-top: 4px;">
-                    "开发一个用户登录功能"
-                    </code>
-                </div>
-                <div>
-                    <strong>AI-Generated Output:</strong><br>
-                    <div style="background: #e9ecef; padding: 12px; border-radius: 8px; margin-top: 8px; font-size: 13px;">
-                        <strong>Task Name:</strong> 开发一个用户登录功能<br>
-                        <strong>Subtask 1:</strong> 数据库设计与用户表创建 (4h) [中等]<br>
-                        <strong>Subtask 2:</strong> 前端登录界面开发 (8h) [中等]<br>
-                        <strong>Subtask 3:</strong> 后端登录API开发 (12h) [困难] 依赖: 子任务1<br>
-                        <strong>Subtask 4:</strong> 密码加密与安全处理 (6h) [困难] 依赖: 子任务3<br>
-                        <strong>Subtask 5:</strong> 登录状态管理与会话处理 (8h) [中等] 依赖: 子任务3<br>
-                        <strong>Total:</strong> 44 hours<br>
-                        <strong>Parallel Work Suggestion:</strong> 前端开发可与数据库设计并行，后端API需等待数据库完成
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- 系统架构说明 -->
-        <div style="margin: 20px 0;">
-            <p style="font-weight: 500; margin-bottom: 8px;">🏗️ System Architecture</p>
-            <div style="background: #f8f9fa; padding: 16px; border-radius: 12px;">
-                <code style="background: #e9ecef; padding: 8px; border-radius: 6px; display: block; font-size: 12px;">
-                User Input → DeepSeek API (Prompt Engineering) → JSON Extractor (Regex) → Structured Data → Gradio UI
-                </code>
-                <p style="margin-top: 12px; font-size: 13px; color: #666;">
-                    🔹 <strong>Prompt Engineering:</strong> Designed system prompt to enforce JSON output with dependencies and difficulty levels<br>
-                    🔹 <strong>Robust Parsing:</strong> Multi-layer regex extraction handles markdown-wrapped JSON responses<br>
-                    🔹 <strong>Error Recovery:</strong> Graceful fallbacks with user-friendly error messages
-                </p>
-            </div>
-        </div>
-        
-        <!-- 技术亮点 -->
-        <div style="margin: 20px 0;">
-            <p style="font-weight: 500; margin-bottom: 8px;">✨ Key Technical Highlights</p>
-            <ul style="margin: 0 0 0 20px; color: #555;">
-                <li><strong>🤖 AI Solution Implementation:</strong> Integrated DeepSeek API with custom prompt engineering</li>
-                <li><strong>🔧 Robust Error Handling:</strong> Multi-layer JSON extraction with regex fallbacks</li>
-                <li><strong>📐 System Design:</strong> Modular architecture with API client, data models, and presentation layer</li>
-                <li><strong>🌐 Cloud Deployment:</strong> Deployed on Hugging Face Spaces with permanent public URL</li>
-                <li><strong>💡 Cost Optimization:</strong> DeepSeek API (90% cheaper than alternatives)</li>
-            </ul>
-        </div>
-        
-        
-        <!-- 项目资源链接 - 永久链接 -->
-        <p style="margin-top: 20px;">
-            <a href="https://huggingface.co/spaces/ruanmoyingpao/smartflow-ai" style="color: #1e6fdf; font-weight: bold; font-size: 16px;" target="_blank">
-                🚀 Live Demo (Permanent) - Try It Now! →
+        <p style="margin-top: 15px;">
+            <a href="https://huggingface.co/spaces/ruanmoyingpao/smartflow-ai" style="color: #1e6fdf; font-weight: bold;" target="_blank">
+                🚀 Live Demo →
             </a>
             &nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="https://github.com/zhi-qingying/smartflow-ai" style="color: #1e6fdf;" target="_blank">
-                💻 GitHub Repository →
+                💻 GitHub →
             </a>
         </p>
         
-        <!-- 项目状态指示器 -->
-        <div style="margin-top: 12px; display: flex; align-items: center; gap: 12px;">
+        <div style="margin-top: 12px;">
             <span style="background: #4caf50; color: white; padding: 2px 10px; border-radius: 20px; font-size: 12px;">
                 ✅ Deployed & Live
-            </span>
-            <span style="color: #666; font-size: 12px;">
-                🔗 Permanent URL | Hugging Face Spaces
-            </span>
-        </div>
-        
-        <!-- 项目反思 -->
-        <div style="margin-top: 16px; padding: 12px; background: #f9f9f9; border-radius: 8px; font-size: 13px;">
-            <strong>💭 Reflection:</strong><br>
-            <span style="color: #666;">
-                Learned to handle real-world API inconsistencies (markdown-wrapped JSON) using regex-based extraction.
-                Next: Add task progress tracking and Jira API integration.
             </span>
         </div>
     </div>
@@ -184,12 +129,9 @@
             <span class="tag">Machine Learning</span>
             <span class="tag">Data Visualization</span>
         </div>
-        <p style="margin-top: 15px;">
-            <a href="projects/hr-analytics/index.html" style="color: #1e6fdf;">View Dashboard Details →</a>
-        </p>
     </div>
     
-    <!-- 金融新闻智能分析系统 -->
+    <!-- Financial News Intelligence System -->
     <div class="project">
         <h3>Financial News Intelligence System – AI-Powered Analysis Pipeline</h3>
         
@@ -228,23 +170,6 @@
             </div>
         </div>
         
-        <div style="margin: 20px 0;">
-            <p style="font-weight: 500; margin-bottom: 8px;">🏗️ System Architecture</p>
-            <div style="background: #f8f9fa; padding: 16px; border-radius: 12px;">
-                <code style="background: #e9ecef; padding: 8px; border-radius: 6px; display: block; font-size: 12px;">
-                Data scraping → Cleaning → MongoDB storage → AI analysis → Excel reporting
-                </code>
-            </div>
-        </div>
-        
-        <div style="margin: 20px 0; background: #f9f9f9; padding: 16px; border-radius: 12px; border-left: 4px solid #1976d2;">
-            <p style="font-weight: 500; margin: 0 0 8px 0;">🤖 AI-Generated Summary Sample</p>
-            <p style="margin: 0; color: #333; font-size: 14px;">
-                <strong>Original:</strong> "After pivoting, Y Combinator grad Glimpse raises $35M led by a16z"<br>
-                <strong>AI Summary:</strong> "Y Combinator graduate Glimpse has secured $35 million in Series A funding led by Andreessen Horowitz."
-            </p>
-        </div>
-        
         <p><strong>✨ Key Features:</strong></p>
         <ul>
             <li><strong>Automated Data Collection:</strong> Scrapes fintech news from NewsAPI with anti-detection measures</li>
@@ -255,7 +180,7 @@
         </ul>
     </div>
     
-    <!-- 香港房地产数据分析系统 -->
+    <!-- Hong Kong Property Market Analytics Platform -->
     <div class="project">
         <h3>🏠 Hong Kong Property Market Analytics Platform</h3>
         
@@ -289,16 +214,6 @@
             </div>
         </div>
         
-        <div style="margin: 20px 0;">
-            <p style="font-weight: 500; margin-bottom: 8px;">📊 Key Insights from SQL Analysis</p>
-            <ul style="margin: 0 0 0 20px; color: #555;">
-                <li><strong>Price Ranking:</strong> Central & Western district has highest avg price per sqft (HKD $87,200+)</li>
-                <li><strong>Price-Area Correlation:</strong> Negative correlation (-0.42) confirms smaller units have higher price per sqft</li>
-                <li><strong>Most Active Estate:</strong> THE VICTORIA recorded 180+ transactions across all districts</li>
-                <li><strong>New Sale Premium:</strong> New Sale transactions average 8-12% higher price per sqft than Resale</li>
-            </ul>
-        </div>
-        
         <p><strong>✨ Key Features:</strong></p>
         <ul>
             <li><strong>Synthetic Data Generator:</strong> Python script generating realistic property transactions</li>
@@ -308,10 +223,26 @@
         </ul>
         
         <p style="margin-top: 15px;">
-            <a href="projects/hk-property/README.md" style="color: #1e6fdf;">📖 Documentation →</a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="https://github.com/zhi-qingying/hk-property-analysis" style="color: #1e6fdf;">💻 GitHub Repository →</a>
+            <a href="https://github.com/zhi-qingying/hk-property-analysis" style="color: #1e6fdf;" target="_blank">
+                💻 GitHub Repository →
+            </a>
         </p>
+    </div>
+    
+    <!-- Olist E-Commerce Platform Operations Analysis (EXPANDED WITH LINK TO DETAIL PAGE) -->
+    <div class="project">
+        <a href="project-olist.html">
+            <h3>📊 Olist E-Commerce Platform Operations Analysis</h3>
+            <p>Processed 90,000+ orders with Python, performed multi-table join queries with SQL, and created interactive dashboards with Power BI. Identified logistics bottlenecks, star categories, and high-value customer segments.</p>
+            <div>
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">Data Visualization</span>
+                <span class="tag">EDA</span>
+            </div>
+            <div class="click-hint">🔍 Click to view full analysis with Power BI dashboard →</div>
+        </a>
     </div>
     
     <!-- Hong Kong Cross-Border Medical Aesthetics Mini Program -->
@@ -322,17 +253,6 @@
             <span class="tag">Product Design</span>
             <span class="tag">Requirements Analysis</span>
             <span class="tag">PRD</span>
-        </div>
-    </div>
-    
-    <!-- Olist E-Commerce Platform Operations Analysis -->
-    <div class="project">
-        <h3>Olist E-Commerce Platform Operations Analysis</h3>
-        <p>Processed 90,000+ orders with Python, multi-table join queries with SQL, and created interactive dashboards with Power BI.</p>
-        <div>
-            <span class="tag">Python</span>
-            <span class="tag">SQL</span>
-            <span class="tag">Power BI</span>
         </div>
     </div>
     
