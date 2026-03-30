@@ -141,24 +141,187 @@
 </div>
     
     <!-- Financial News Intelligence System -->
-    <div class="project">
-        <h3>Financial News Intelligence System – AI-Powered Analysis Pipeline</h3>
-        
-        <p>
-            Built an automated pipeline that scrapes, cleans, and analyzes fintech news using Generative AI. 
-            The system processes hundreds of articles daily, generating concise summaries, sentiment analysis, 
-            and topic classifications. Final insights are compiled into multi-sheet Excel reports for easy review.
-        </p>
-        
-        <div style="margin: 12px 0; display: flex; flex-wrap: wrap; gap: 8px;">
-            <span class="tag">🐍 Python</span>
-            <span class="tag">📊 Pandas</span>
-            <span class="tag">🌐 Requests</span>
-            <span class="tag">🍲 BeautifulSoup</span>
-            <span class="tag">🍃 MongoDB</span>
-            <span class="tag">🤖 DeepSeek API</span>
-            <span class="tag">📁 openpyxl</span>
+<div class="project">
+    <h3>📊 Financial News Intelligence System – AI-Powered Analysis Pipeline</h3>
+    
+    <p>
+        Built an end-to-end automated pipeline that scrapes, cleans, stores, and analyzes fintech news using 
+        <strong>Generative AI</strong>. The system processes news articles daily, generating concise summaries, 
+        sentiment analysis (positive/negative/neutral), and topic classifications. All insights are compiled 
+        into multi-sheet Excel reports for easy review and decision-making.
+    </p>
+    
+    <!-- 技术栈标签 -->
+    <div style="margin: 12px 0; display: flex; flex-wrap: wrap; gap: 8px;">
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🐍 Python</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">📊 Pandas</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🌐 Requests</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🍲 BeautifulSoup</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🍃 MongoDB</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">🤖 DeepSeek API</span>
+        <span style="background: #e0e0e0; padding: 4px 12px; border-radius: 20px; font-size: 12px;">📁 openpyxl</span>
+    </div>
+    
+    <!-- 项目架构流程图 -->
+    <div style="margin: 20px 0; background: #f5f7fa; padding: 20px; border-radius: 12px;">
+        <p style="font-weight: 600; margin-bottom: 12px;">🏗️ System Architecture</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-size: 13px;">
+            <div style="flex: 1; text-align: center; padding: 12px; background: white; border-radius: 8px;">
+                <div>🌐</div>
+                <div><strong>Data Collection</strong></div>
+                <div style="font-size: 11px; color: #666;">Requests · NewsAPI · BeautifulSoup</div>
+            </div>
+            <div style="font-size: 20px; color: #999;">→</div>
+            <div style="flex: 1; text-align: center; padding: 12px; background: white; border-radius: 8px;">
+                <div>🧹</div>
+                <div><strong>Data Cleaning</strong></div>
+                <div style="font-size: 11px; color: #666;">Pandas · Deduplication · Text Normalization</div>
+            </div>
+            <div style="font-size: 20px; color: #999;">→</div>
+            <div style="flex: 1; text-align: center; padding: 12px; background: white; border-radius: 8px;">
+                <div>🍃</div>
+                <div><strong>Data Storage</strong></div>
+                <div style="font-size: 11px; color: #666;">MongoDB · Indexing · Query</div>
+            </div>
+            <div style="font-size: 20px; color: #999;">→</div>
+            <div style="flex: 1; text-align: center; padding: 12px; background: white; border-radius: 8px;">
+                <div>🤖</div>
+                <div><strong>AI Analysis</strong></div>
+                <div style="font-size: 11px; color: #666;">DeepSeek API · Summary · Sentiment · Classification</div>
+            </div>
+            <div style="font-size: 20px; color: #999;">→</div>
+            <div style="flex: 1; text-align: center; padding: 12px; background: white; border-radius: 8px;">
+                <div>📊</div>
+                <div><strong>Report Generation</strong></div>
+                <div style="font-size: 11px; color: #666;">Excel · Multi-sheet · Statistics</div>
+            </div>
         </div>
+    </div>
+    
+    <!-- 关键数据卡片（从分析结果提取） -->
+    <div style="display: flex; gap: 16px; margin: 20px 0; flex-wrap: wrap;">
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 16px 24px; border-radius: 16px; text-align: center; flex: 1; min-width: 100px; color: white;">
+            <div style="font-size: 32px; font-weight: bold;">15</div>
+            <div style="font-size: 12px; opacity: 0.9;">Articles Analyzed</div>
+        </div>
+        <div style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); padding: 16px 24px; border-radius: 16px; text-align: center; flex: 1; min-width: 100px; color: white;">
+            <div style="font-size: 32px; font-weight: bold;">7</div>
+            <div style="font-size: 12px; opacity: 0.9;">Positive</div>
+            <div style="font-size: 11px; opacity: 0.8;">46.7%</div>
+        </div>
+        <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 16px 24px; border-radius: 16px; text-align: center; flex: 1; min-width: 100px; color: white;">
+            <div style="font-size: 32px; font-weight: bold;">7</div>
+            <div style="font-size: 12px; opacity: 0.9;">Negative</div>
+            <div style="font-size: 11px; opacity: 0.8;">46.7%</div>
+        </div>
+        <div style="background: linear-gradient(135deg, #ffa751 0%, #ffe259 100%); padding: 16px 24px; border-radius: 16px; text-align: center; flex: 1; min-width: 100px; color: white;">
+            <div style="font-size: 32px; font-weight: bold;">1</div>
+            <div style="font-size: 12px; opacity: 0.9;">Neutral</div>
+            <div style="font-size: 11px; opacity: 0.8;">6.7%</div>
+        </div>
+        <div style="background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%); padding: 16px 24px; border-radius: 16px; text-align: center; flex: 1; min-width: 100px; color: white;">
+            <div style="font-size: 32px; font-weight: bold;">10</div>
+            <div style="font-size: 12px; opacity: 0.9;">Investment News</div>
+            <div style="font-size: 11px; opacity: 0.8;">66.7%</div>
+        </div>
+    </div>
+    
+    <!-- 分析结果图表 -->
+    <div style="margin: 20px 0;">
+        <p style="font-weight: 600; margin-bottom: 8px;">📈 AI Analysis Results</p>
+        <img src="projects/financial-news-analysis/analysis_chart%20(1).png" 
+             alt="Sentiment and Category Distribution"
+             style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <p style="font-size: 13px; color: #666; margin-top: 8px;">
+            Sentiment distribution: 7 positive, 7 negative, 1 neutral | Category breakdown: 10 investment, 3 other, 2 regulation
+        </p>
+    </div>
+    
+    <!-- 示例：AI生成的摘要对比 -->
+    <div style="margin: 20px 0; background: #f9f9f9; padding: 16px; border-radius: 12px; border-left: 4px solid #667eea;">
+        <p style="font-weight: 600; margin: 0 0 12px 0;">🤖 AI-Generated Summary Sample</p>
+        <div style="margin-bottom: 12px;">
+            <div style="font-size: 12px; color: #888; margin-bottom: 4px;">📰 Original Title:</div>
+            <div style="font-size: 14px;">"After pivoting, Y Combinator grad Glimpse raises $35M led by a16z"</div>
+        </div>
+        <div>
+            <div style="font-size: 12px; color: #888; margin-bottom: 4px;">✨ AI Summary:</div>
+            <div style="font-size: 14px; color: #333;">"Y Combinator graduate Glimpse has secured $35 million in Series A funding led by Andreessen Horowitz."</div>
+        </div>
+        <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+            <span style="display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 12px; font-size: 11px;">Sentiment: Positive</span>
+            <span style="display: inline-block; background: #e3f2fd; color: #1976d2; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin-left: 8px;">Category: Investment</span>
+        </div>
+    </div>
+    
+    <!-- 核心功能列表 -->
+    <p><strong>✨ Key Features:</strong></p>
+    <ul>
+        <li><strong>Automated Data Collection:</strong> Scrapes fintech news from NewsAPI with anti-detection measures and request retries</li>
+        <li><strong>Data Cleaning Pipeline:</strong> Handles missing values, deduplication, text normalization, and date formatting using Pandas</li>
+        <li><strong>MongoDB Storage:</strong> Structured document storage with indexing for efficient querying and historical data management</li>
+        <li><strong>AI-Powered Analysis:</strong> Leverages DeepSeek API for one-line summaries, sentiment scoring (positive/negative/neutral), keyword extraction, and category classification</li>
+        <li><strong>Automated Reporting:</strong> Generates multi-sheet Excel reports with news data, sentiment statistics, category breakdowns, and source analysis</li>
+        <li><strong>Daily Intelligence Brief:</strong> Produces formatted text reports with market assessment, trending stories, and actionable recommendations</li>
+    </ul>
+    
+    <!-- 项目文件下载区 -->
+    <div style="margin: 20px 0; background: #f5f7fa; padding: 16px; border-radius: 12px;">
+        <p style="font-weight: 600; margin: 0 0 12px 0;">📁 Project Artifacts</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+            <a href="projects/financial-news-analysis/raw_news.csv" target="_blank" style="background: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; color: #333; font-size: 13px; border: 1px solid #ddd;">📄 Raw News Data (CSV)</a>
+            <a href="projects/financial-news-analysis/clean_news.csv" target="_blank" style="background: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; color: #333; font-size: 13px; border: 1px solid #ddd;">🧹 Cleaned News Data (CSV)</a>
+            <a href="projects/financial-news-analysis/analyzed_news.csv" target="_blank" style="background: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; color: #333; font-size: 13px; border: 1px solid #ddd;">🤖 AI Analyzed Data (CSV)</a>
+            <a href="projects/financial-news-analysis/daily_report%20(2).xlsx" target="_blank" style="background: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; color: #333; font-size: 13px; border: 1px solid #ddd;">📊 Complete Excel Report</a>
+        </div>
+    </div>
+    
+    <!-- Daily Report 预览 -->
+    <div style="margin: 20px 0;">
+        <p style="font-weight: 600; margin-bottom: 8px;">📋 Daily Intelligence Brief Sample</p>
+        <div style="background: #1e1e1e; color: #d4d4d4; padding: 16px; border-radius: 12px; font-family: monospace; font-size: 12px; overflow-x: auto;">
+            <pre style="margin: 0; color: #d4d4d4;">============================================================
+Financial Intelligence Daily Report
+Report Date: 2026-03-30
+============================================================
+
+📊 Overall Summary
+   Total Articles Analyzed: 15
+
+📰 Information Sources
+   TechCrunch Fintech: 15 articles (100.0%)
+
+😊 Sentiment Analysis
+   Positive: 46.7%
+   Negative: 46.7%
+   Neutral: 6.7%
+
+📈 Market Assessment
+   Market Sentiment: Neutral ⚖️
+   Recommendation: Maintain current strategy
+
+🔥 Hot Categories
+   investment: 10 articles (66.7%)
+   other: 3 articles (20.0%)
+   regulation: 2 articles (13.3%)</pre>
+        </div>
+    </div>
+    
+    <!-- 项目链接 -->
+    <div style="margin-top: 20px; display: flex; gap: 20px; flex-wrap: wrap;">
+        <a href="https://github.com/zhi-qingying/financial-news-analysis-system" 
+           target="_blank" 
+           style="display: inline-flex; align-items: center; gap: 6px; background: #24292f; color: white; padding: 8px 20px; border-radius: 24px; text-decoration: none; font-size: 14px;">
+            📂 GitHub Repository
+        </a>
+        <a href="projects/financial-news-analysis/daily_report%20(2).xlsx" 
+           target="_blank"
+           style="display: inline-flex; align-items: center; gap: 6px; background: #1e6f3f; color: white; padding: 8px 20px; border-radius: 24px; text-decoration: none; font-size: 14px;">
+            📥 Download Full Report (Excel)
+        </a>
+    </div>
+</div>
+<hr style="margin: 40px 0;">
         
         <div style="display: flex; gap: 16px; margin: 20px 0; flex-wrap: wrap;">
             <div style="background: #f0f7ff; padding: 12px 20px; border-radius: 12px; text-align: center; flex: 1;">
